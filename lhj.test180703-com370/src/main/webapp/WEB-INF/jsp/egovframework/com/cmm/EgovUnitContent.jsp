@@ -8,6 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<c:forEach items="${selectCmmCodeDetail}" var="item">
+		<li>${item}</li>
+	</c:forEach>
+	
 	<c:if test="${loginVO != null}">
 		${loginVO.name }님 환영합니다. <a href="${pageContext.request.contextPath }/uat/uia/actionLogout.do">로그아웃</a>
 	</c:if>
